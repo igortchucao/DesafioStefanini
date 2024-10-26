@@ -1,0 +1,55 @@
+[
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.BancoController",
+    "Method": "Post",
+    "RelativePath": "Banco",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movimentacao",
+        "Type": "Questao5.Domain.Entities.MovimentacaoFinanceira",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "PostMovimentacaoCC"
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.BancoController",
+    "Method": "Get",
+    "RelativePath": "Banco",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idContaCorrente",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetSaldoConta"
+  }
+]
